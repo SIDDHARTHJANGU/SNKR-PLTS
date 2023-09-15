@@ -234,7 +234,7 @@ select {
   cursor: pointer;
 }
 /* NAV */
-@media (max-width: 1190px) {
+@media (max-width: 1200px) {
   .mobile_view {
     position: fixed;
     top: 0;
