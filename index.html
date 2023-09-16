@@ -5,6 +5,29 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SNKR PLTS</title>
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="SNKRPLTS" />
+    <meta name="description"
+        content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://metatags.io/" />
+    <meta property="og:title" content="SNKRPLTS" />
+    <meta property="og:description"
+        content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!" />
+    <meta property="og:image" content="https://thumbs2.imgbox.com/06/01/NgyIF6n3_t.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://metatags.io/" />
+    <meta property="twitter:title" content="SNKRPLTS" />
+    <meta property="twitter:description"
+        content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!" />
+    <meta property="twitter:image" content="https://thumbs2.imgbox.com/06/01/NgyIF6n3_t.png" />
+
+    <!-- Meta Tags Generated with https://metatags.io -->
+
     <link rel="icon" href="./assets/images/svg/logo.svg">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/root.css">
@@ -1502,11 +1525,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
-    <script type="text/javascript">
+    <script>
         function incrementValue() {
             var value = parseInt(document.getElementById('number').value, 10);
             value = isNaN(value) ? 0 : value;
-            if (value < 10) {
+            if (value < 10
+            ) {
                 value++;
                 document.getElementById('number').value = value;
             }
@@ -1518,9 +1542,7 @@
                 value--;
                 document.getElementById('number').value = value;
             }
-
         };
-
         function openNav() {
             document.getElementById("navbar").classList.toggle("end-0");
             document.body.classList.toggle("overflow_hidden");
@@ -1541,7 +1563,6 @@
                         slidesToShow: 3,
                         slidesToScroll: 1,
                         infinite: true,
-
                     }
                 },
                 {
