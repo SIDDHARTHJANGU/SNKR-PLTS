@@ -34,7 +34,7 @@
   position: absolute;
   content: "";
   width: 0%;
-  height: 2px;
+  height: 3px;
   bottom: -5;
   right: 50%;
   display: block;
@@ -114,6 +114,9 @@ ul {
 .icon {
   cursor: pointer;
 }
+.icon:hover svg path {
+  fill: orangered;
+}
 .heart {
   cursor: pointer;
 }
@@ -131,9 +134,7 @@ ul {
 .gap-90 {
   gap: 90px;
 }
-.mt-94 {
-  margin-top: 94px;
-}
+
 .line::after {
   position: absolute;
   content: "";
@@ -156,9 +157,21 @@ ul {
   border-radius: 16px;
   border: 1px solid rgba(0, 0, 0, 0.12);
 }
+
 .button-2 {
   padding: 10px 32px;
   border-radius: 23px;
+  transition: all 300ms linear;
+}
+.button-2:hover {
+  background-image: linear-gradient(
+    to right,
+    #0ba360,
+    #3cba92,
+    #30dd8a,
+    #2bb673
+  );
+  box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
 }
 .mt-87 {
   margin-top: 87px;
@@ -266,7 +279,8 @@ select {
   z-index: 30;
 }
 .img-2 {
-  border: none !important;
+  border-bottom: 2px solid #ebebeb;
+  width: 100%;
 }
 .slider-bttn {
   color: rgba(0, 0, 0, 0.7) !important;
@@ -284,6 +298,7 @@ select {
   background: rgba(196, 196, 196, 0);
   transition: all 300ms linear;
 }
+
 .nxt-bttn:hover {
   background-color: #ff4400 !important;
   color: white;
@@ -297,10 +312,49 @@ select {
     padding: 10px 26px;
     border-radius: 23px;
   }
+  .mt-87 {
+    margin-top: 40px;
+  }
+  .pt-88 {
+    padding-top: 20px;
+  }
 }
 @media (min-width: 576px) {
   .button-2 {
     padding: 10px 32px;
     border-radius: 23px;
+  }
+  .mt-87 {
+    margin-top: 60px;
+  }
+  .pt-88 {
+    padding-top: 30px;
+  }
+}
+@media (min-width: 768px) {
+  .button-2 {
+    padding: 10px 32px;
+    border-radius: 23px;
+  }
+  .mt-87 {
+    margin-top: 88px;
+  }
+}
+@media (min-width: 992px) {
+  .button-2 {
+    padding: 10px 32px;
+    border-radius: 23px;
+  }
+  .mt-87 {
+    margin-top: 88px;
+  }
+}
+@media (min-width: 1200px) {
+  .button-2 {
+    padding: 10px 32px;
+    border-radius: 23px;
+  }
+  .mt-87 {
+    margin-top: 88px;
   }
 }
