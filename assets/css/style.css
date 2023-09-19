@@ -111,6 +111,9 @@ ul {
 .ml-33 {
   margin-left: 33px;
 }
+.icon-2 {
+  cursor: pointer;
+}
 .icon {
   cursor: pointer;
 }
